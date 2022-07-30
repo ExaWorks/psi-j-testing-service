@@ -6,6 +6,9 @@ To make a release of the service:
 - tag with 'v<major>.<minor>.<patch>' !important;
 - run 'build.sh <major>.<minor>.<patch>' to build and push docker image
 
+- this can all be done by running release.sh; it commits the current
+  RELEASE file, tags, and builds the docker image
+
 
 To deploy the service(s):
 - make a release as above for deployment

@@ -169,7 +169,7 @@ var globalMethods = {
         var passed = true;
         var skipped = false;
         for (var k in results) {
-            passed &= results[k].passed;
+            passed &&= results[k].passed;
             if (k == "call") {
                 skipped = (results[k].status == "skipped");
             }
